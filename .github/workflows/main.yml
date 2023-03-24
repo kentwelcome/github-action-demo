@@ -12,6 +12,8 @@ jobs:
 
     - name: PipeRider Compare
       uses: InfuseAI/piperider-compare-action@v1.0.0-beta.1
+      env:
+        PIPERIDER_API_SERVICE: https://staging.cloud.piperider.io
       with:
         cloud_api_token: ${{ secrets.API_TOKEN }}
         cloud_project: paddle-demo/first-project
