@@ -1,0 +1,20 @@
+name: PR with PipeRider
+
+on: [pull_request]
+
+jobs:
+  piperider-compare:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: PipeRider Compare
+      uses: InfuseAI/piperider-compare-action@vv1.0.0-beta.1
+      with:
+        cloud_api_token: ${{ secrets.API_TOKEN }}
+        cloud_project: paddle-demo/first-project
+        upload: true
+        share: true
+        credentials_yml: ${{ secrets.CREDENTIALS_YML }}
