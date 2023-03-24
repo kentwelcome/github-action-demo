@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: PipeRider Compare
-      uses: InfuseAI/piperider-compare-action@vv1.0.0-beta.1
+      uses: InfuseAI/piperider-compare-action@v1.0.0-beta.1
       with:
         cloud_api_token: ${{ secrets.API_TOKEN }}
         cloud_project: paddle-demo/first-project
