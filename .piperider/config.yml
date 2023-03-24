@@ -1,0 +1,12 @@
+dataSources:
+- name: github-action-demo
+  type: snowflake
+
+profiler:
+#   table:
+#     # the maximum row count to profile. (Default unlimited)
+#     limit: 1000000
+#     duplicateRows: false
+
+telemetry:
+  id: bdbee318cc5c42afbb053b91407c7f37
