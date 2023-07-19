@@ -20,4 +20,4 @@ jobs:
         upload: true
         share: true
         credentials_yml: ${{ secrets.CREDENTIALS_YML }}
-        piperider_version: 0.29.2rc
+        piperider_version: 0.29.2rc2
